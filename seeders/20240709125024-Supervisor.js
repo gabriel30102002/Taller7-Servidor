@@ -12,9 +12,9 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-    let etiquetas = ['foto', 'payaso', 'rojo', 'azul','techo', 'cielo','foco', 'luz']
+    let etiquetas = ['nombre 1', 'nombre 2', 'nombre 3']
       for(let etiqueta of etiquetas) {
-        await queryInterface.bulkInsert('etiquetas', [{
+        await queryInterface.bulkInsert('Usuario', [{
           texto: etiqueta,
           createdAt: new Date(),
           updatedAt: new Date()

@@ -21,7 +21,7 @@ module.exports = (sequelize, DataTypes) => {
     ruta: DataTypes.STRING
   }, {
     sequelize,
-    modelName: 'foto',
+    modelName: 'Usuarios',
   });
   return foto;
 };

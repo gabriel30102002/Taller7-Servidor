@@ -21,15 +21,15 @@
 <body>
   <% arrFotos.forEach(foto => { %>
     <div class="foto-container">
-      <h2><%= foto.titulo %></h2>
-      <p><%= foto.descripcion %></p>
-      <p>Calificación: <%= foto.calificacion %></p>
+      <h2><%= usuario.titulo %></h2>
+      <p><%= usuario.descripcion %></p>
+      <p>Calificación: <%= ususario.calificacion %></p>
       <img src="<%= foto.ruta %>" alt="<%= foto.titulo %>">
       <div class="etiquetas">
-        <h3>Etiquetas</h3>
+        <h3>Pefil</h3>
         <ul>
-          <% foto.etiqueta.forEach(etiqueta => { %>
-            <li><%= etiqueta.texto %></li>
+          <% Usuario.Perfil.forEach(etiqueta => { %>
+            <li><%= Perfil.texto %></li>
           <% }); %>
         </ul>
       </div>

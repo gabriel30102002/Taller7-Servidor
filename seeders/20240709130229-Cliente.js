@@ -14,7 +14,7 @@ module.exports = {
     */
     let [fotos, fotos_metadata] = await queryInterface.sequelize.query('SELECT id FROM fotos')
     let [etiquetas, etiquetas_metadata] = await queryInterface.sequelize.query('SELECT id FROM etiquetas')
-    await queryInterface.bulkInsert('fotoetiquetas', [
+    await queryInterface.bulkInsert('Usuario_Perfil', [
         { foto_id: fotos[0].id, etiqueta_id: etiquetas[0].id, createdAt: new Date(), updatedAt: new
     Date() },
         { foto_id: fotos[0].id, etiqueta_id: etiquetas[1].id, createdAt: new Date(), updatedAt: new
@@ -32,6 +32,6 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-    await queryInterface.bulkDelete('fotoetiquetas', null, {});
+    await queryInterface.bulkDelete('Usuario_Perfil', null, {});
   }
 };
